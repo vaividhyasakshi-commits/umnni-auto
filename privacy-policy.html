@@ -1,0 +1,960 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Privacy Policy | UMNNI Auto Advertising</title>
+
+    <meta name="description" content="Learn how UMNNI Advertising handles personal information submitted through its auto rickshaw advertising website.">
+
+    <link rel="icon" href="assets/images/logo1.jpg">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/style.css">
+
+    <style>
+
+        .policy-header {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 15px;
+            padding: 14px 5%;
+            background: #ffffff;
+            border-bottom: 1px solid #efdfd2;
+        }
+
+        .policy-header img {
+            width: 150px;
+        }
+
+        .policy-hero {
+            display: grid;
+            grid-template-columns: minmax(0,1.3fr) minmax(0,1fr);
+            align-items: center;
+            gap: 40px;
+            padding: 65px 5%;
+            background:
+                radial-gradient(
+                    circle at top right,
+                    rgba(242,123,33,.25),
+                    transparent 40%
+                ),
+                #111111;
+            color: #ffffff;
+        }
+
+        .policy-hero h1 {
+            font-size: clamp(48px,7vw,100px);
+            font-weight: 900;
+            line-height: 1.05;
+            letter-spacing: -.06em;
+        }
+
+        .policy-hero p {
+            max-width: 570px;
+            color: #cccccc;
+            margin-top: 20px;
+            font-size: 16px;
+            line-height: 1.8;
+        }
+
+        .policy-hero img {
+            width: 100%;
+            max-height: 280px;
+            object-fit: contain;
+        }
+
+        .breadcrumb {
+            margin-top: 25px;
+            font-size: 13px;
+            color: #bbbbbb;
+        }
+
+        .breadcrumb a {
+            color: #f27b21;
+            font-weight: 700;
+        }
+
+        .policy-layout {
+            display: grid;
+            grid-template-columns: 280px minmax(0,1fr);
+            align-items: start;
+            gap: 30px;
+            padding: 50px 5%;
+            background: #fff7ef;
+        }
+
+        .policy-sidebar {
+            position: sticky;
+            top: 100px;
+            background: #ffffff;
+            padding: 25px;
+            border: 1px solid #efdfd2;
+            border-radius: 18px;
+        }
+
+        .policy-sidebar h3 {
+            font-size: 18px;
+            font-weight: 900;
+            padding-bottom: 14px;
+            margin-bottom: 10px;
+            border-bottom: 3px solid #f27b21;
+        }
+
+        .policy-sidebar a {
+            display: block;
+            padding: 10px 8px;
+            border-radius: 6px;
+            color: #666666;
+            font-size: 13px;
+            font-weight: 600;
+        }
+
+        .policy-sidebar a:hover,
+        .policy-sidebar a.active {
+            background: #fff1e5;
+            color: #df6408;
+        }
+
+        .policy-article {
+            min-width: 0;
+            padding: 40px;
+            background: #ffffff;
+            border: 1px solid #efdfd2;
+            border-radius: 22px;
+            box-shadow: 0 15px 50px rgba(0,0,0,.04);
+        }
+
+        .policy-intro {
+            padding: 24px;
+            background: #fff1e5;
+            border-radius: 12px;
+            border-left: 5px solid #f27b21;
+            margin-bottom: 35px;
+        }
+
+        .policy-intro h2 {
+            font-size: 23px;
+            font-weight: 900;
+            margin-bottom: 10px;
+        }
+
+        .policy-section {
+            padding-bottom: 28px;
+            margin-bottom: 28px;
+            border-bottom: 1px solid #eeeeee;
+            scroll-margin-top: 100px;
+        }
+
+        .policy-section:last-child {
+            padding-bottom: 0;
+            margin-bottom: 0;
+            border-bottom: 0;
+        }
+
+        .policy-section h2 {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 23px;
+            font-weight: 900;
+            line-height: 1.4;
+            margin-bottom: 18px;
+        }
+
+        .policy-section h2 span {
+            width: 38px;
+            height: 38px;
+            flex-shrink: 0;
+            display: grid;
+            place-items: center;
+            font-size: 13px;
+            border-radius: 9px;
+            background: #fff1e5;
+            color: #df6408;
+        }
+
+        .policy-section p,
+        .policy-intro p,
+        .policy-section li {
+            color: #555555;
+            font-size: 15px;
+            line-height: 1.9;
+        }
+
+        .policy-section p {
+            margin-bottom: 12px;
+        }
+
+        .policy-section ul {
+            padding-left: 23px;
+            margin: 15px 0 20px;
+        }
+
+        .policy-section li {
+            margin-bottom: 8px;
+        }
+
+        .policy-section li::marker {
+            color: #f27b21;
+        }
+
+        .policy-section a {
+            color: #df6408;
+            font-weight: 700;
+            overflow-wrap: anywhere;
+        }
+
+        .policy-contact {
+            padding: 30px;
+            border-radius: 16px;
+            background: #111111;
+            color: #ffffff;
+        }
+
+        .policy-contact h3 {
+            color: #f27b21;
+            font-weight: 900;
+            font-size: 23px;
+            margin-bottom: 17px;
+        }
+
+        .policy-contact p {
+            color: #cccccc;
+            font-size: 14px;
+        }
+
+        .policy-contact strong {
+            color: #f27b21;
+        }
+
+        .policy-contact a {
+            color: #ffffff;
+        }
+
+        .policy-footer {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 15px;
+            padding: 25px 5%;
+            color: #aaaaaa;
+            background: #111111;
+            border-top: 3px solid #f27b21;
+            font-size: 13px;
+        }
+
+        .policy-footer a {
+            color: #f27b21;
+        }
+
+        @media (max-width: 900px) {
+
+            .policy-layout {
+                grid-template-columns: minmax(0,1fr);
+            }
+
+            .policy-sidebar {
+                position: static;
+            }
+
+            .policy-sidebar nav {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .policy-hero {
+                grid-template-columns: 1fr;
+            }
+
+            .policy-hero img {
+                max-height: 200px;
+            }
+        }
+
+        @media (max-width: 550px) {
+
+            .policy-header img {
+                width: 110px;
+            }
+
+            .policy-header .btn {
+                font-size: 11px;
+                padding: 10px 13px;
+            }
+
+            .policy-hero {
+                padding: 40px 20px;
+            }
+
+            .policy-hero h1 {
+                font-size: 50px;
+            }
+
+            .policy-layout {
+                padding: 25px 15px;
+            }
+
+            .policy-sidebar nav {
+                grid-template-columns: 1fr;
+            }
+
+            .policy-article {
+                padding: 24px 17px;
+            }
+
+            .policy-section h2 {
+                font-size: 19px;
+            }
+
+            .policy-section p,
+            .policy-section li {
+                font-size: 14px;
+            }
+
+            .policy-contact {
+                padding: 20px;
+            }
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <header class="policy-header">
+
+        <a href="index.html">
+
+            <img src="assets/images/logo1.jpg"
+                 alt="UMNNI Advertising">
+
+        </a>
+
+        <a href="index.html" class="btn primary">
+
+            ← Back to Home
+
+        </a>
+
+    </header>
+
+
+    <section class="policy-hero">
+
+        <div>
+
+            <span class="kicker">
+                YOUR PRIVACY MATTERS
+            </span>
+
+            <h1>Privacy <em>Policy</em></h1>
+
+            <p>
+
+                Learn how UMNNI Advertising collects, uses
+                and handles your personal information when
+                you visit our auto advertising website.
+
+            </p>
+
+            <div class="breadcrumb">
+
+                <a href="index.html">Home</a>
+
+                / Privacy Policy
+
+            </div>
+
+        </div>
+
+        <img src="assets/images/auto-side.svg"
+             alt="UMNNI auto advertising illustration">
+
+    </section>
+
+
+    <main class="policy-layout">
+
+        <aside class="policy-sidebar">
+
+            <h3>Quick Navigation</h3>
+
+            <nav aria-label="Privacy Policy Sections">
+
+                <a href="#introduction">01. Introduction</a>
+                <a href="#information">02. Information We Collect</a>
+                <a href="#usage">03. Information Usage</a>
+                <a href="#sharing">04. Information Sharing</a>
+                <a href="#cookies">05. Cookies and Website Data</a>
+                <a href="#security">06. Data Security</a>
+                <a href="#retention">07. Data Retention</a>
+                <a href="#third-party">08. Third-Party Services</a>
+                <a href="#rights">09. Privacy Rights</a>
+                <a href="#children">10. Children's Privacy</a>
+                <a href="#updates">11. Policy Updates</a>
+                <a href="#contact">12. Contact Us</a>
+
+            </nav>
+
+        </aside>
+
+
+        <article class="policy-article">
+
+            <div class="policy-intro">
+
+                <h2>Our Commitment to Your Privacy</h2>
+
+                <p>
+
+                    At UMNNI Advertising, we respect your privacy
+                    and recognise the importance of handling
+                    personal information responsibly. This policy
+                    explains how we handle information submitted
+                    through our auto rickshaw advertising website.
+
+                </p>
+
+            </div>
+
+
+            <section class="policy-section" id="introduction">
+
+                <h2><span>01</span> Introduction</h2>
+
+                <p>
+
+                    This Privacy Policy applies to the UMNNI
+                    Advertising auto rickshaw advertising
+                    landing page and enquiries submitted
+                    through this website.
+
+                </p>
+
+                <p>
+
+                    UMNNI Advertising offers outdoor and transit
+                    advertising solutions, including rear panel
+                    advertising, side branding, hood branding,
+                    full auto wraps and fleet advertising campaigns.
+
+                </p>
+
+            </section>
+
+
+            <section class="policy-section" id="information">
+
+                <h2><span>02</span> Information We Collect</h2>
+
+                <p>
+
+                    When you submit an enquiry or request a
+                    consultation, we collect the information
+                    you provide, which may include:
+
+                </p>
+
+                <ul>
+
+                    <li>Full name</li>
+                    <li>Email address</li>
+                    <li>Mobile number</li>
+                    <li>Preferred advertising format</li>
+                    <li>Campaign requirements and messages</li>
+                    <li>City, vehicle quantity and campaign duration if included in your message</li>
+                    <li>The website form through which your enquiry was submitted</li>
+
+                </ul>
+
+                <p>
+
+                    Our hosting and external resource providers
+                    may process technical information such as
+                    IP addresses, browser details, device
+                    information and access times.
+
+                </p>
+
+                <p>
+
+                    Our enquiry form does not request payment
+                    information, banking credentials or government
+                    identification numbers. Please avoid submitting
+                    unnecessary sensitive information.
+
+                </p>
+
+            </section>
+
+
+            <section class="policy-section" id="usage">
+
+                <h2><span>03</span> How We Use Your Information</h2>
+
+                <p>
+                    Information submitted through this website
+                    may be used to:
+                </p>
+
+                <ul>
+
+                    <li>Respond to auto advertising enquiries.</li>
+
+                    <li>Contact you by phone or email regarding your request.</li>
+
+                    <li>Understand your preferred locations and campaign objectives.</li>
+
+                    <li>Prepare advertising proposals and quotations.</li>
+
+                    <li>Coordinate requested advertising campaigns.</li>
+
+                    <li>Maintain relevant business communication records.</li>
+
+                    <li>Maintain website functionality and security.</li>
+
+                    <li>Meet applicable legal obligations.</li>
+
+                </ul>
+
+                <p>
+
+                    Separate permission will be sought for
+                    unrelated promotional communications
+                    where required.
+
+                </p>
+
+            </section>
+
+
+            <section class="policy-section" id="sharing">
+
+                <h2><span>04</span> Information Sharing</h2>
+
+                <p>
+
+                    Enquiries submitted through our website are
+                    forwarded to our designated business email
+                    account so our team can respond to them.
+
+                </p>
+
+                <p>
+
+                    Where necessary, information may be processed
+                    or shared with:
+
+                </p>
+
+                <ul>
+
+                    <li>Relevant UMNNI Advertising team members.</li>
+
+                    <li>Website hosting and email service providers.</li>
+
+                    <li>Advertising partners required to coordinate requested services.</li>
+
+                    <li>Authorised authorities where disclosure is required by law.</li>
+
+                </ul>
+
+            </section>
+
+
+            <section class="policy-section" id="cookies">
+
+                <h2><span>05</span> Cookies and Website Data</h2>
+
+                <p>
+
+                    Cookies are small files that may be stored
+                    on your device by websites or external services.
+
+                </p>
+
+                <p>
+
+                    Our website uses external font resources.
+                    External providers may process technical
+                    information according to their own privacy
+                    practices.
+
+                </p>
+
+                <p>
+
+                    You can manage cookies and external resource
+                    permissions using your browser settings.
+                    Restricting certain resources may affect
+                    website appearance or functionality.
+
+                </p>
+
+            </section>
+
+
+            <section class="policy-section" id="security">
+
+                <h2><span>06</span> Data Security</h2>
+
+                <p>
+
+                    We recognise the importance of protecting
+                    personal information against unauthorised
+                    access, disclosure, alteration or misuse.
+
+                </p>
+
+                <p>
+
+                    Our website uses server-side form processing
+                    and validation. Submitted enquiries are
+                    forwarded through an authenticated email service.
+
+                </p>
+
+                <p>
+
+                    However, no method of internet transmission
+                    or electronic storage can be guaranteed
+                    to be completely secure.
+
+                </p>
+
+            </section>
+
+
+            <section class="policy-section" id="retention">
+
+                <h2><span>07</span> Data Retention</h2>
+
+                <p>
+
+                    Personal information may be retained for
+                    as long as reasonably necessary to respond
+                    to enquiries, coordinate requested campaigns
+                    and maintain relevant business records.
+
+                </p>
+
+                <p>
+
+                    Information may also be retained where
+                    required for contractual, accounting
+                    or applicable legal obligations.
+
+                </p>
+
+            </section>
+
+
+            <section class="policy-section" id="third-party">
+
+                <h2><span>08</span> Third-Party Services</h2>
+
+                <p>
+
+                    Our website uses third-party services
+                    supporting website functionality and
+                    business communication.
+
+                </p>
+
+                <ul>
+
+                    <li>Google Fonts for website typography.</li>
+
+                    <li>Google email services for receiving enquiries.</li>
+
+                    <li>Website hosting and infrastructure services.</li>
+
+                    <li>External website links.</li>
+
+                </ul>
+
+                <p>
+
+                    These services operate according to their
+                    own terms and privacy policies.
+
+                </p>
+
+                <p>
+
+                    Google's privacy practices can be reviewed at:
+
+                    <a href="https://policies.google.com/privacy"
+                       target="_blank"
+                       rel="noopener noreferrer">
+
+                        Google Privacy Policy
+
+                    </a>.
+
+                </p>
+
+            </section>
+
+
+            <section class="policy-section" id="rights">
+
+                <h2><span>09</span> Your Privacy Rights</h2>
+
+                <p>
+
+                    Subject to applicable law, you may contact
+                    us to request:
+
+                </p>
+
+                <ul>
+
+                    <li>Access to your personal information.</li>
+
+                    <li>Correction of inaccurate information.</li>
+
+                    <li>Deletion of personal information.</li>
+
+                    <li>Withdrawal of consent where applicable.</li>
+
+                    <li>Stopping optional promotional communications.</li>
+
+                    <li>Review of privacy-related concerns.</li>
+
+                </ul>
+
+                <p>
+
+                    Requests may be submitted by email to
+
+                    <a href="mailto:info@umnni.com">
+
+                        info@umnni.com
+
+                    </a>.
+
+                    Identity verification may be required
+                    before certain requests are processed.
+
+                </p>
+
+            </section>
+
+
+            <section class="policy-section" id="children">
+
+                <h2><span>10</span> Children's Privacy</h2>
+
+                <p>
+
+                    Our website is intended for businesses,
+                    organisations and individuals seeking
+                    professional advertising services.
+
+                </p>
+
+                <p>
+
+                    It is not directed towards children under
+                    the age of 18. If you believe a child has
+                    submitted personal information through
+                    our website, please contact us.
+
+                </p>
+
+            </section>
+
+
+            <section class="policy-section" id="updates">
+
+                <h2><span>11</span> Changes to This Policy</h2>
+
+                <p>
+
+                    We may update this Privacy Policy to
+                    reflect changes in our website, services,
+                    business practices or applicable legal
+                    requirements.
+
+                </p>
+
+                <p>
+
+                    Updated versions will be published on
+                    this page. Additional notice will be
+                    provided where required.
+
+                </p>
+
+            </section>
+
+
+            <section class="policy-section" id="contact">
+
+                <h2><span>12</span> Contact Us</h2>
+
+                <p>
+
+                    For questions, concerns or requests
+                    regarding your personal information,
+                    please contact us using the details below.
+
+                </p>
+
+                <div class="policy-contact">
+
+                    <h3>UMNNI Advertising</h3>
+
+                    <p>
+
+                        <strong>Office Address:</strong><br>
+
+                        Chamber No-6, Panchmarhi Tower,<br>
+
+                        Kaushambi, Ghaziabad,<br>
+
+                        Uttar Pradesh, India.
+
+                    </p>
+
+                    <p>
+
+                        <strong>Email:</strong>
+
+                        <a href="mailto:info@umnni.com">
+                            info@umnni.com
+                        </a>
+
+                    </p>
+
+                    <p>
+
+                        <strong>Phone:</strong>
+
+                        <a href="tel:+918938851151">
+                            +91 8938851151
+                        </a>
+
+                    </p>
+
+                    <p>
+
+                        <strong>Website:</strong>
+
+                        <a href="https://www.umnni.com/">
+                            www.umnni.com
+                        </a>
+
+                    </p>
+
+                    <a class="btn primary"
+                       href="mailto:info@umnni.com?subject=Privacy%20Enquiry">
+
+                        Contact Us ↗
+
+                    </a>
+
+                </div>
+
+            </section>
+
+        </article>
+
+    </main>
+
+
+    <footer class="policy-footer">
+
+        <span>
+            &copy; UMNNI Advertising. All rights reserved.
+        </span>
+
+        <a href="index.html">Home</a>
+
+        <a href="index.html#contact">Contact Us</a>
+
+        <a href="privacy-policy.html">Privacy Policy</a>
+
+    </footer>
+
+
+    <script>
+
+        const sections = document.querySelectorAll(
+            ".policy-section"
+        );
+
+        const links = document.querySelectorAll(
+            ".policy-sidebar nav a"
+        );
+
+        function updateActiveLink() {
+
+            let current = "";
+
+            sections.forEach(section => {
+
+                if (
+                    section.getBoundingClientRect().top <= 180
+                ) {
+
+                    current = section.id;
+
+                }
+
+            });
+
+            links.forEach(link => {
+
+                const active =
+                    link.getAttribute("href") === "#" + current;
+
+                link.classList.toggle("active", active);
+
+                if (active) {
+
+                    link.setAttribute(
+                        "aria-current",
+                        "location"
+                    );
+
+                } else {
+
+                    link.removeAttribute(
+                        "aria-current"
+                    );
+
+                }
+
+            });
+
+        }
+
+        window.addEventListener(
+
+            "scroll",
+
+            updateActiveLink,
+
+            { passive: true }
+
+        );
+
+        updateActiveLink();
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,351 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="robots" content="noindex, follow">
+
+    <title>Thank You | UMNNI Auto Advertising</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <link rel="icon" href="assets/images/logo1.jpg">
+
+    <link rel="stylesheet" href="assets/style.css">
+
+    <style>
+
+        body {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .thank-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 5%;
+            gap: 15px;
+            background: #ffffff;
+            border-bottom: 1px solid #efdfd2;
+        }
+
+        .thank-header img {
+            width: 150px;
+        }
+
+        .thank-main {
+            flex: 1;
+            display: grid;
+            grid-template-columns: minmax(0,1fr) minmax(0,1fr);
+            align-items: stretch;
+        }
+
+        .thank-art {
+            position: relative;
+            min-height: 550px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 50px;
+            background:
+                radial-gradient(
+                    circle at center,
+                    #ffc58b,
+                    transparent 70%
+                ),
+                #f27b21;
+            overflow: hidden;
+        }
+
+        .thank-art h2 {
+            position: relative;
+            z-index: 2;
+            font-size: clamp(40px,5vw,80px);
+            line-height: .95;
+            letter-spacing: -4px;
+            font-weight: 900;
+        }
+
+        .thank-art h2 span {
+            color: #ffffff;
+        }
+
+        .thank-art img {
+            position: relative;
+            z-index: 2;
+            width: 100%;
+            max-width: 620px;
+            margin: 25px 0;
+            animation: autoFloat 5s ease-in-out infinite;
+        }
+
+        .thank-art small {
+            font-size: 11px;
+            font-weight: 900;
+            letter-spacing: 2px;
+        }
+
+        .thank-content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 65px 8%;
+            background: #ffffff;
+        }
+
+        .check {
+            width: 80px;
+            height: 80px;
+            display: grid;
+            place-items: center;
+            color: #f27b21;
+            background: #fff1e5;
+            border: 2px solid #ffd4b3;
+            border-radius: 50%;
+            margin-bottom: 25px;
+        }
+
+        .check svg {
+            width: 42px;
+            height: 42px;
+        }
+
+        .thank-content h1 {
+            font-size: clamp(45px,6vw,85px);
+            font-weight: 900;
+            letter-spacing: -.06em;
+            line-height: 1.05;
+            margin: 5px 0 20px;
+        }
+
+        .thank-content > p {
+            color: #666666;
+            line-height: 1.8;
+            font-size: 16px;
+        }
+
+        .next-step {
+            padding: 23px;
+            background: #fff7ef;
+            border-left: 4px solid #f27b21;
+            border-radius: 9px;
+            margin: 25px 0;
+        }
+
+        .next-step h3 {
+            font-weight: 800;
+            font-size: 17px;
+            margin-bottom: 7px;
+        }
+
+        .next-step p {
+            color: #666666;
+            font-size: 14px;
+        }
+
+        .thank-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        .thank-footer {
+            padding: 25px 5%;
+            color: #cccccc;
+            background: #111111;
+            border-top: 3px solid #f27b21;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 12px;
+            font-size: 13px;
+        }
+
+        .thank-footer a {
+            color: #f27b21;
+        }
+
+        @media (max-width: 800px) {
+
+            .thank-main {
+                grid-template-columns: 1fr;
+            }
+
+            .thank-content {
+                order: -1;
+                padding: 45px 22px;
+            }
+
+            .thank-art {
+                min-height: 300px;
+                padding: 35px;
+            }
+
+            .thank-art img {
+                max-width: 420px;
+            }
+        }
+
+        @media (max-width: 550px) {
+
+            .thank-header img {
+                width: 110px;
+            }
+
+            .thank-header .btn {
+                padding: 10px 14px;
+                font-size: 11px;
+            }
+
+            .thank-buttons {
+                width: 100%;
+            }
+
+            .thank-buttons .btn {
+                flex: 1;
+            }
+
+            .thank-footer {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <header class="thank-header">
+
+        <a href="index.html">
+
+            <img src="assets/images/logo1.jpg"
+                 alt="UMNNI Advertising">
+
+        </a>
+
+        <a href="index.html" class="btn primary">
+
+            ← Back to Home
+
+        </a>
+
+    </header>
+
+
+    <main class="thank-main">
+
+        <div class="thank-art">
+
+            <h2>
+
+                YOUR BRAND.<br>
+
+                <span>ON THE MOVE.</span>
+
+            </h2>
+
+            <img src="assets/images/auto-side.svg"
+                 alt="Auto rickshaw advertising illustration">
+
+            <small>UMNNI AUTO ADVERTISING</small>
+
+        </div>
+
+
+        <div class="thank-content">
+
+            <div class="check">
+
+                <svg viewBox="0 0 24 24"
+                     fill="none"
+                     stroke="currentColor"
+                     stroke-width="2.7"
+                     stroke-linecap="round"
+                     stroke-linejoin="round">
+
+                    <path d="M5 12l4 4L19 6"/>
+
+                </svg>
+
+            </div>
+
+            <span class="kicker">
+
+                ENQUIRY SUBMITTED SUCCESSFULLY
+
+            </span>
+
+            <h1>Thank <em>You!</em></h1>
+
+            <p>
+
+                Thank you for reaching out to UMNNI Advertising.
+                We have received your auto advertising enquiry
+                and our team will connect with you soon.
+
+            </p>
+
+            <div class="next-step">
+
+                <h3>What Happens Next?</h3>
+
+                <p>
+
+                    Our team will review your campaign requirements
+                    and help you plan the right advertising format,
+                    locations and vehicle branding strategy.
+
+                </p>
+
+            </div>
+
+            <div class="thank-buttons">
+
+                <a href="index.html" class="btn primary">
+
+                    Back to Home
+
+                </a>
+
+                <a href="tel:+918938851151" class="btn dark-btn">
+
+                    Call Now ↗
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <footer class="thank-footer">
+
+        <span>
+            &copy; UMNNI Advertising. All rights reserved.
+        </span>
+
+        <a href="privacy-policy.html">
+            Privacy Policy
+        </a>
+
+        <a href="mailto:info@umnni.com">
+            info@umnni.com
+        </a>
+
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,6 @@
+Options -Indexes
+DirectoryIndex index.html
+<FilesMatch "^(config(\.example)?\.php|\.env.*|\.gitignore|.*\.log)$">
+    Require all denied
+</FilesMatch>
+RedirectMatch 404 "(^|/)\.git(/|$)"

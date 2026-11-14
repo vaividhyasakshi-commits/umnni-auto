@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<!-- =====================================================
+       BASIC META + SEO SETUP
+  ====================================================== -->
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Auto Rickshaw Advertising Agency in Ghaziabad | UMNNI Advertising</title>
+<meta content="UMNNI Advertising offers auto rickshaw branding, rear panel ads, hood branding and fleet advertising in Delhi NCR and other Indian cities, subject to availability." name="description"/>
+<meta content="auto rickshaw advertising, auto branding, auto advertising agency Ghaziabad, Delhi NCR auto advertising, transit media, UMNNI Advertising" name="keywords"/>
+<!-- =====================================================
+       TAILWIND CDN
+       Note: Internet required for Tailwind CDN.
+       For production, you can compile Tailwind locally.
+  ====================================================== -->
+<script src="https://cdn.tailwindcss.com"></script>
+<!-- =====================================================
+       GOOGLE FONT
+  ====================================================== -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<!-- =====================================================
+       CUSTOM TAILWIND THEME
+       Orange/White/Black theme.
+       Blue is used only for buttons.
+  ====================================================== -->
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            inter: ['Inter', 'sans-serif'],
+          },
+          colors: {
+            brandOrange: '#f27b21',
+            darkOrange: '#df6408',
+            lightOrange: '#fff5ec',
+            deepBlack: '#111111',
+            softBlack: '#1f1f1f',
+            buttonBlue: '#155dfc'
+          },
+          boxShadow: {
+            premium: '0 24px 70px rgba(17, 17, 17, 0.12)',
+            orangeGlow: '0 20px 60px rgba(242, 123, 33, 0.22)'
+          }
+        }
+      }
+    }
+  </script>
+<!-- =====================================================
+       INTERNAL CSS
+       Custom animations are triggered by umnni-script.js
+  ====================================================== -->
+<style>
+html,body{margin:0;width:100%;max-width:100%;overflow-x:clip} section{scroll-margin-top:90px} @media(max-width:767px){body.js-loaded [data-animate="fade-left"],body.js-loaded [data-animate="fade-right"]{transform:translateY(30px)}body.js-loaded [data-animate].show{transform:none}}
+
+    * {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #ffffff;
+      color: #111111;
+    }
+
+    /* Orange background pattern */
+    .orange-pattern {
+      background:
+        radial-gradient(circle at 10% 20%, rgba(242,123,33,0.18), transparent 30%),
+        radial-gradient(circle at 90% 10%, rgba(242,123,33,0.14), transparent 25%),
+        radial-gradient(circle at 50% 90%, rgba(242,123,33,0.10), transparent 30%),
+        #ffffff;
+    }
+
+    /* Premium black section pattern */
+    .black-pattern {
+      background:
+        radial-gradient(circle at top left, rgba(242,123,33,0.28), transparent 35%),
+        radial-gradient(circle at bottom right, rgba(242,123,33,0.20), transparent 30%),
+        #111111;
+    }
+
+    /* Custom AOS style - element remains visible if JS fails */
+    [data-animate] {
+      opacity: 1;
+      transform: none;
+    }
+
+    body.js-loaded [data-animate] {
+      opacity: 0;
+      transition: all 0.9s ease;
+    }
+
+    body.js-loaded [data-animate="fade-up"] {
+      transform: translateY(55px);
+    }
+
+    body.js-loaded [data-animate="fade-left"] {
+      transform: translateX(-55px);
+    }
+
+    body.js-loaded [data-animate="fade-right"] {
+      transform: translateX(55px);
+    }
+
+    body.js-loaded [data-animate="zoom-in"] {
+      transform: scale(0.92);
+    }
+
+    body.js-loaded [data-animate].show {
+      opacity: 1;
+      transform: none;
+    }
+
+    /* Floating hero shapes */
+    .float-shape {
+      animation: floatShape 5s ease-in-out infinite;
+    }
+
+    @keyframes floatShape {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-14px);
+      }
+    }
+
+    /* Marquee animation */
+    .marquee-track {
+      animation: marquee 24s linear infinite;
+    }
+
+    @keyframes marquee {
+      from {
+        transform: translateX(0);
+      }
+      to {
+        transform: translateX(-50%);
+      }
+    }
+
+    /* Progress bars */
+    .progress-fill {
+      width: 0;
+      transition: width 1.8s ease;
+    }
+  </style>
+</head>
+<body class="font-inter overflow-x-hidden">
+<!-- =====================================================
+     HEADER / NAVBAR
+====================================================== -->
+<header class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-xl border-b border-orange-100 transition-all duration-300" id="navbar">
+<div class="w-full max-w-none mx-auto px-5 md:px-8 lg:px-12">
+<div class="h-20 flex items-center justify-between">
+<!-- Logo -->
+<a class="flex items-center" href="#">
+<img alt="UMNNI Advertising" class="h-14 lg:h-16 w-auto object-contain" onerror="this.hidden=true; this.nextElementSibling.hidden=false;" src="assets/images/logo1.jpg"/><span class="font-black text-brandOrange" hidden="True">UMNNI Advertising</span>
+</a>
+<!-- Desktop Menu -->
+<nav class="hidden lg:flex items-center gap-10 text-[14px] font-extrabold text-deepBlack">
+<a class="hover:text-brandOrange transition duration-300" href="#about">
+          About
+        </a>
+<a class="hover:text-brandOrange transition duration-300" href="#services">
+          Services
+        </a>
+<a class="hover:text-brandOrange transition duration-300" href="#why">
+          Why Us
+        </a>
+<a class="hover:text-brandOrange transition duration-300" href="#process">
+          Process
+        </a>
+<a class="hover:text-brandOrange transition duration-300" href="#contact">
+          Contact
+        </a>
+</nav>
+<!-- Right Side -->
+<div class="flex items-center gap-4">
+<a class="hidden md:inline-flex bg-buttonBlue hover:bg-blue-700 text-white px-6 py-3 rounded-full font-extrabold shadow-lg transition" href="#contact">
+          Get Free Consultation
+        </a>
+<!-- Mobile Hamburger -->
+<button class="lg:hidden w-12 h-12 rounded-xl border border-orange-200 flex items-center justify-center" id="mobileMenuBtn">
+<svg class="w-7 h-7 text-brandOrange" fill="none" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24">
+<path d="M4 6H20"></path>
+<path d="M4 12H20"></path>
+<path d="M4 18H20"></path>
+</svg>
+</button>
+</div>
+</div>
+</div>
+<!-- Mobile Menu -->
+<div class="hidden lg:hidden bg-white border-t border-orange-100 shadow-xl" id="mobileMenu">
+<div class="px-5 py-6 flex flex-col gap-5 font-bold text-deepBlack">
+<a class="mobile-link" href="#about">About</a>
+<a class="mobile-link" href="#services">Services</a>
+<a class="mobile-link" href="#why">Why Us</a>
+<a class="mobile-link" href="#process">Process</a>
+<a class="mobile-link" href="#contact">Contact</a>
+<a class="bg-buttonBlue text-white text-center py-3 rounded-xl font-black" href="#contact">
+        Get Free Consultation
+      </a>
+</div>
+</div>
+</header>
+<!-- =====================================================
+       HERO SECTION WITH TOP FORM
+  ====================================================== -->
+<section class="relative min-h-screen pt-32 pb-20 orange-pattern overflow-hidden">
+<!-- Decorative floating shapes -->
+<div class="absolute top-28 right-16 w-24 h-24 bg-brandOrange/15 rounded-full blur-xl float-shape"></div>
+<div class="absolute bottom-20 left-10 w-36 h-36 bg-brandOrange/10 rounded-full blur-2xl float-shape"></div>
+<div class="w-full max-w-none mx-auto px-5 md:px-8 lg:px-12 relative z-10">
+<div class="grid lg:grid-cols-2 gap-12 items-center">
+<!-- Hero Left Content -->
+<div data-animate="fade-right">
+<div class="inline-flex items-center gap-2 bg-white border border-orange-200 rounded-full px-5 py-2 shadow-sm mb-6">
+<span class="w-2 h-2 rounded-full bg-brandOrange"></span>
+<span class="text-sm font-extrabold text-deepBlack">15+ Years PAN India Advertising Experience</span>
+</div>
+<h1 class="text-5xl md:text-6xl lg:text-7xl font-black leading-[1.05] tracking-tight text-deepBlack">Take Your Brand <span class="text-brandOrange">Across the City</span> with Auto Advertising</h1>
+<p class="mt-6 text-lg md:text-xl text-gray-700 leading-relaxed max-w-xl">Reach local audiences with <span class="text-brandOrange font-extrabold">Auto Rickshaw Branding</span>, <span class="text-brandOrange font-extrabold">Rear Panel Ads</span> and <span class="text-brandOrange font-extrabold">Fleet Campaigns</span> that move through busy neighbourhoods and commercial routes.</p>
+<div class="mt-8 flex flex-col sm:flex-row gap-4">
+<a class="bg-buttonBlue hover:bg-blue-700 text-white px-8 py-4 rounded-full font-black text-center transition shadow-lg" href="#contact">
+              Start Your Campaign
+            </a>
+<a class="bg-white hover:bg-lightOrange text-deepBlack border border-orange-200 px-8 py-4 rounded-full font-black text-center transition" href="#services">
+              Explore Services
+            </a>
+</div>
+<!-- Mini Stats -->
+<div class="grid gap-2 sm:gap-4 mt-10 max-w-xl grid-cols-1 sm:grid-cols-3">
+<div class="bg-white rounded-3xl border border-orange-100 p-3 sm:p-5 shadow-sm">
+<p class="text-3xl font-black text-brandOrange counter" data-target="15">0</p>
+<p class="text-sm font-bold text-gray-600">Years Experience</p>
+</div>
+<div class="bg-white rounded-3xl border border-orange-100 p-3 sm:p-5 shadow-sm">
+<p class="text-3xl font-black text-brandOrange">PAN</p>
+<p class="text-sm font-bold text-gray-600">India Reach</p>
+</div>
+<div class="bg-white rounded-3xl border border-orange-100 p-3 sm:p-5 shadow-sm">
+<p class="text-3xl font-black text-brandOrange">360°</p>
+<p class="text-sm font-bold text-gray-600">Execution</p>
+</div>
+</div>
+</div>
+<!-- Hero Right Form Card -->
+<div class="relative" data-animate="fade-left">
+<div class="absolute -inset-4 bg-brandOrange/20 rounded-[2.5rem] blur-2xl"></div>
+<div class="relative bg-white rounded-[2rem] border border-orange-100 p-7 md:p-9 shadow-premium">
+<div class="mb-7">
+<p class="text-brandOrange font-black uppercase tracking-widest text-sm">Free Consultation</p>
+<h2 class="text-3xl font-black text-deepBlack mt-2">Get a Custom Auto Advertising Plan</h2>
+<p class="text-gray-600 mt-3">Share your city, campaign goals and requirements. Our team will help you plan the right auto rickshaw advertising campaign.</p>
+</div>
+<!-- Lead Form Top -->
+<form action="contact-mail.php" class="lead-form space-y-4" method="POST"><input name="form_source" type="hidden" value="Auto Advertising Hero Form"/>
+<input class="w-full rounded-2xl border border-orange-200 px-5 py-4 outline-none focus:border-brandOrange transition" maxlength="150" minlength="3" name="name" placeholder="Your Name" required="" type="text"/>
+<input class="w-full rounded-2xl border border-orange-200 px-5 py-4 outline-none focus:border-brandOrange transition" name="email" placeholder="Email Address" required="" type="email"/>
+<input class="w-full rounded-2xl border border-orange-200 px-5 py-4 outline-none focus:border-brandOrange transition" inputmode="numeric" maxlength="10" name="phone" pattern="[6-9][0-9]{9}" placeholder="Phone Number" required="" type="tel"/>
+<select class="w-full rounded-2xl border border-orange-200 px-5 py-4 outline-none focus:border-brandOrange transition" name="service" required=""><option value="">Choose Advertising Format</option><option>Rear Panel Advertising</option><option>Side Panel Branding</option><option>Hood Branding</option><option>Full Auto Branding</option><option>Fleet Advertising</option><option>Complete Auto Advertising Campaign</option></select>
+<textarea class="w-full rounded-2xl border border-orange-200 px-5 py-4 outline-none focus:border-brandOrange transition" maxlength="5000" minlength="10" name="message" placeholder="Tell us your city, preferred areas and campaign requirements" required="" rows="4"></textarea>
+<button class="w-full bg-buttonBlue hover:bg-blue-700 text-white rounded-2xl px-6 py-4 font-black transition shadow-lg" type="submit">
+                Submit Inquiry
+              </button>
+<p class="sm:col-span-2 text-xs text-gray-600 text-center">By submitting, you request that we contact you about your enquiry. Read our <a class="text-buttonBlue font-bold hover:underline" href="privacy-policy.html" rel="noopener noreferrer" target="_blank">Privacy Policy</a>.</p>
+</form>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- =====================================================
+       BRAND MARQUEE / KEYWORDS STRIP
+  ====================================================== -->
+<section class="bg-deepBlack py-5 overflow-hidden">
+<div class="marquee-track flex gap-10 whitespace-nowrap text-white font-black uppercase tracking-wide">
+<span class="text-brandOrange">Auto Branding</span>
+<span>Rear Panel Ads</span>
+<span class="text-brandOrange">Fleet Advertising</span>
+<span>Side Panel Branding</span>
+<span class="text-brandOrange">Hood Branding</span>
+<span>Local Visibility</span>
+<span class="text-brandOrange">Transit Media</span>
+<span>On-Ground Campaigns</span>
+<span class="text-brandOrange">Auto Branding</span>
+<span>Rear Panel Ads</span>
+<span class="text-brandOrange">Fleet Advertising</span>
+<span>Side Panel Branding</span>
+<span class="text-brandOrange">Hood Branding</span>
+<span>Local Visibility</span>
+<span class="text-brandOrange">Transit Media</span>
+<span>On-Ground Campaigns</span>
+</div>
+</section>
+<!-- =====================================================
+       ABOUT SECTION
+  ====================================================== -->
+<section class="py-24 bg-white" id="about">
+<div class="w-full max-w-none mx-auto px-5 md:px-8 lg:px-12">
+<div class="grid lg:grid-cols-2 gap-14 items-center">
+<!-- About Image/Visual Card -->
+<div class="relative" data-animate="fade-right">
+<div class="bg-lightOrange rounded-[2rem] p-8 border border-orange-100 shadow-orangeGlow">
+<div class="bg-white rounded-[1.5rem] p-7 shadow-premium">
+<div class="grid grid-cols-2 gap-4">
+<div class="rounded-3xl bg-deepBlack p-6 text-white">
+<p class="text-4xl font-black text-brandOrange">15+</p>
+<p class="font-bold mt-2">Years Experience</p>
+</div>
+<div class="rounded-3xl bg-lightOrange p-6">
+<p class="text-4xl font-black text-brandOrange">PAN</p>
+<p class="font-bold mt-2 text-deepBlack">India Reach</p>
+</div>
+<div class="rounded-3xl bg-lightOrange p-6">
+<p class="text-4xl font-black text-brandOrange">OOH</p>
+<p class="font-bold mt-2 text-deepBlack">Outdoor Media</p>
+</div>
+<div class="rounded-3xl bg-deepBlack p-6 text-white">
+<p class="text-4xl font-black text-brandOrange">360°</p>
+<p class="font-bold mt-2">Marketing</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- About Text -->
+<div data-animate="fade-left">
+<p class="text-brandOrange font-black uppercase tracking-widest">About UMNNI Advertising</p>
+<h2 class="text-4xl md:text-5xl font-black mt-3 leading-tight text-deepBlack">Your Partner in <span class="text-brandOrange">Moving Media</span> and Local Brand Visibility</h2>
+<p class="mt-6 text-lg text-gray-700 leading-relaxed">Auto rickshaw advertising brings your brand into everyday journeys, connecting with commuters, pedestrians and shoppers. At <span class="font-extrabold text-deepBlack">UMNNI Advertising</span>, we plan creative transit campaigns around your audience and target locations.</p>
+<p class="mt-4 text-lg text-gray-700 leading-relaxed">With over <span class="text-brandOrange font-black">15 years of advertising experience</span> across <span class="text-brandOrange font-black">PAN India</span>, we help brands plan local outdoor campaigns, subject to city, fleet and format availability.</p>
+<div class="mt-8 grid sm:grid-cols-2 gap-4">
+<div class="flex items-start gap-3">
+<span class="w-7 h-7 rounded-full bg-brandOrange text-white flex items-center justify-center font-black">✓</span>
+<p class="font-bold text-deepBlack">Route-based planning</p>
+</div>
+<div class="flex items-start gap-3">
+<span class="w-7 h-7 rounded-full bg-brandOrange text-white flex items-center justify-center font-black">✓</span>
+<p class="font-bold text-deepBlack">High-visibility creatives</p>
+</div>
+<div class="flex items-start gap-3">
+<span class="w-7 h-7 rounded-full bg-brandOrange text-white flex items-center justify-center font-black">✓</span>
+<p class="font-bold text-deepBlack">Clear reporting</p>
+</div>
+<div class="flex items-start gap-3">
+<span class="w-7 h-7 rounded-full bg-brandOrange text-white flex items-center justify-center font-black">✓</span>
+<p class="font-bold text-deepBlack">On-ground coordination</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- =====================================================
+     WHY CHOOSE US SECTION
+====================================================== -->
+<section class="py-24 bg-lightOrange" id="why">
+<div class="w-full max-w-none mx-auto px-5 md:px-8 lg:px-12">
+<!-- Section Heading -->
+<div class="text-center max-w-3xl mx-auto mb-14" data-animate="fade-up">
+<p class="text-brandOrange font-black uppercase tracking-widest">What Sets Us Apart?</p>
+<h2 class="text-4xl md:text-5xl font-black text-deepBlack mt-3">Advertising That Moves <span class="text-brandOrange">With Your Audience</span></h2>
+</div>
+<!-- Why Cards -->
+<div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Card 1 -->
+<div class="bg-white rounded-[1.7rem] p-7 border-t-4 border-brandOrange shadow-sm hover:shadow-premium hover:-translate-y-2 transition duration-300" data-animate="fade-up">
+<div class="w-14 h-14 rounded-2xl bg-lightOrange flex items-center justify-center mb-6">
+<svg class="w-8 h-8 text-brandOrange" fill="none" stroke="currentColor" stroke-width="2.2" viewbox="0 0 24 24">
+<path d="M4 19V5"></path>
+<path d="M4 19H20"></path>
+<path d="M8 16V11"></path>
+<path d="M12 16V8"></path>
+<path d="M16 16V6"></path>
+</svg>
+</div>
+<h3 class="text-xl font-black text-deepBlack">Route-Based Planning</h3>
+<p class="mt-4 text-gray-600 leading-relaxed">Choose target neighbourhoods, markets and commuter routes based on your campaign goals.</p>
+</div>
+<!-- Card 2 -->
+<div class="bg-white rounded-[1.7rem] p-7 border-t-4 border-brandOrange shadow-sm hover:shadow-premium hover:-translate-y-2 transition duration-300" data-animate="fade-up">
+<div class="w-14 h-14 rounded-2xl bg-lightOrange flex items-center justify-center mb-6">
+<svg class="w-8 h-8 text-brandOrange" fill="none" stroke="currentColor" stroke-width="2.2" viewbox="0 0 24 24">
+<circle cx="12" cy="12" r="9"></circle>
+<path d="M3 12H21"></path>
+<path d="M12 3C15 6 16.5 9 16.5 12C16.5 15 15 18 12 21"></path>
+<path d="M12 3C9 6 7.5 9 7.5 12C7.5 15 9 18 12 21"></path>
+</svg>
+</div>
+<h3 class="text-xl font-black text-deepBlack">Mobile Brand Visibility</h3>
+<p class="mt-4 text-gray-600 leading-relaxed">Put your creative on vehicles that travel through everyday urban locations.</p>
+</div>
+<!-- Card 3 -->
+<div class="bg-white rounded-[1.7rem] p-7 border-t-4 border-brandOrange shadow-sm hover:shadow-premium hover:-translate-y-2 transition duration-300" data-animate="fade-up">
+<div class="w-14 h-14 rounded-2xl bg-lightOrange flex items-center justify-center mb-6">
+<svg class="w-8 h-8 text-brandOrange" fill="none" stroke="currentColor" stroke-width="2.2" viewbox="0 0 24 24">
+<path d="M8 11L11 14L16 8"></path>
+<path d="M21 12C21 16.97 16.97 21 12 21C7.03 21 3 16.97 3 12C3 7.03 7.03 3 12 3C13.65 3 15.2 3.45 16.53 4.23"></path>
+</svg>
+</div>
+<h3 class="text-xl font-black text-deepBlack">Transparency</h3>
+<p class="mt-4 text-gray-600 leading-relaxed">Receive clear communication, format options and a custom plan based on your budget.</p>
+</div>
+<!-- Card 4 -->
+<div class="bg-white rounded-[1.7rem] p-7 border-t-4 border-brandOrange shadow-sm hover:shadow-premium hover:-translate-y-2 transition duration-300" data-animate="fade-up">
+<div class="w-14 h-14 rounded-2xl bg-lightOrange flex items-center justify-center mb-6">
+<svg class="w-8 h-8 text-brandOrange" fill="none" stroke="currentColor" stroke-width="2.2" viewbox="0 0 24 24">
+<path d="M12 2L15 9L22 12L15 15L12 22L9 15L2 12L9 9L12 2Z"></path>
+<path d="M12 8V12L15 13.5"></path>
+</svg>
+</div>
+<h3 class="text-xl font-black text-deepBlack">On-Ground Execution</h3>
+<p class="mt-4 text-gray-600 leading-relaxed">Coordinate artwork, vehicle branding and campaign proof with the relevant fleet partners.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- =====================================================
+     SERVICES SECTION
+====================================================== -->
+<section class="py-24 bg-gradient-to-b from-white via-orange-50 to-white overflow-hidden" id="services">
+<div class="w-full max-w-none mx-auto px-5 md:px-8 lg:px-12">
+<!-- Section Header -->
+<div class="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-8 mb-16">
+<div class="max-w-3xl" data-animate="fade-right">
+<p class="text-brandOrange font-black uppercase tracking-[0.25em] mb-3">Our Auto Advertising Solutions</p>
+<h2 class="text-4xl md:text-5xl lg:text-6xl font-black text-deepBlack leading-tight">Multiple Formats for <span class="text-brandOrange">Citywide Visibility</span></h2>
+</div>
+<p class="max-w-lg text-lg text-gray-600 leading-relaxed" data-animate="fade-left">From rear panels to full vehicle branding, choose formats suited to your campaign objectives, local routes and available inventory.</p>
+</div>
+<!-- Services Grid -->
+<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Rear Panel Advertising -->
+<div class="group bg-white rounded-[2rem] p-8 border border-orange-100 hover:border-brandOrange hover:-translate-y-3 hover:shadow-[0_25px_70px_rgba(242,123,33,0.18)] transition duration-500" data-animate="zoom-in">
+<div class="w-16 h-16 rounded-2xl bg-lightOrange flex items-center justify-center group-hover:bg-brandOrange transition">
+<svg class="w-8 h-8 text-brandOrange group-hover:text-white transition" fill="none" stroke="currentColor" stroke-width="2.2" viewbox="0 0 24 24"><rect height="10" rx="2" width="18" x="3" y="7"></rect><path d="M7 17v3m10-3v3M3 12h18"></path></svg>
+</div>
+<h3 class="text-2xl font-black text-deepBlack mt-7">Rear Panel Advertising</h3>
+<p class="text-gray-600 mt-4 leading-relaxed">Display your message on rear-facing panels for visibility in traffic and at stops.</p>
+<ul class="mt-6 space-y-3">
+<li>✓ Rear panel creative</li>
+<li>✓ Local route planning</li>
+<li>✓ Print production</li>
+<li>✓ Installation coordination</li>
+</ul>
+</div>
+<!-- Side Panel Branding -->
+<div class="group bg-white rounded-[2rem] p-8 border border-orange-100 hover:border-brandOrange hover:-translate-y-3 hover:shadow-[0_25px_70px_rgba(242,123,33,0.18)] transition duration-500" data-animate="zoom-in">
+<div class="w-16 h-16 rounded-2xl bg-lightOrange flex items-center justify-center group-hover:bg-brandOrange transition">
+<svg class="w-8 h-8 text-brandOrange group-hover:text-white transition" fill="none" stroke="currentColor" stroke-width="2.2" viewbox="0 0 24 24"><path d="M3 16V9l4-4h10l4 4v7H3Z"></path><circle cx="7" cy="18" r="2"></circle><circle cx="17" cy="18" r="2"></circle></svg>
+</div>
+<h3 class="text-2xl font-black text-deepBlack mt-7">Side Panel Branding</h3>
+<p class="text-gray-600 mt-4 leading-relaxed">Use side-facing surfaces to reach pedestrians and road users along busy routes.</p>
+<ul class="mt-6 space-y-3">
+<li>✓ Side panel artwork</li>
+<li>✓ Market visibility</li>
+<li>✓ Vehicle selection</li>
+<li>✓ Campaign proof</li>
+</ul>
+</div>
+<!-- Hood Branding -->
+<div class="group bg-white rounded-[2rem] p-8 border border-orange-100 hover:border-brandOrange hover:-translate-y-3 hover:shadow-[0_25px_70px_rgba(242,123,33,0.18)] transition duration-500" data-animate="zoom-in">
+<div class="w-16 h-16 rounded-2xl bg-lightOrange flex items-center justify-center group-hover:bg-brandOrange transition">
+<svg class="w-8 h-8 text-brandOrange group-hover:text-white transition" fill="none" stroke="currentColor" stroke-width="2.2" viewbox="0 0 24 24"><path d="M3 12L6 5h12l3 7H3Zm2 0v7m14-7v7"></path></svg>
+</div>
+<h3 class="text-2xl font-black text-deepBlack mt-7">Hood Branding</h3>
+<p class="text-gray-600 mt-4 leading-relaxed">Explore branding on permitted hood or canopy surfaces for a distinctive street presence.</p>
+<ul class="mt-6 space-y-3">
+<li>✓ Canopy format planning</li>
+<li>✓ Creative adaptation</li>
+<li>✓ Material selection</li>
+<li>✓ Availability checks</li>
+</ul>
+</div>
+<!-- Full Auto Branding -->
+<div class="group bg-white rounded-[2rem] p-8 border border-orange-100 hover:border-brandOrange hover:-translate-y-3 hover:shadow-[0_25px_70px_rgba(242,123,33,0.18)] transition duration-500" data-animate="zoom-in">
+<div class="w-16 h-16 rounded-2xl bg-lightOrange flex items-center justify-center group-hover:bg-brandOrange transition">
+<svg class="w-8 h-8 text-brandOrange group-hover:text-white transition" fill="none" stroke="currentColor" stroke-width="2.2" viewbox="0 0 24 24"><rect height="16" rx="3" width="16" x="4" y="4"></rect><path d="M4 9h16M9 9v11"></path></svg>
+</div>
+<h3 class="text-2xl font-black text-deepBlack mt-7">Full Auto Branding</h3>
+<p class="text-gray-600 mt-4 leading-relaxed">Combine approved vehicle surfaces for a more immersive moving brand experience.</p>
+<ul class="mt-6 space-y-3">
+<li>✓ Multi-surface design</li>
+<li>✓ Vehicle coordination</li>
+<li>✓ Production planning</li>
+<li>✓ Installation checks</li>
+</ul>
+</div>
+<!-- Fleet Advertising -->
+<div class="group bg-white rounded-[2rem] p-8 border border-orange-100 hover:border-brandOrange hover:-translate-y-3 hover:shadow-[0_25px_70px_rgba(242,123,33,0.18)] transition duration-500" data-animate="zoom-in">
+<div class="w-16 h-16 rounded-2xl bg-lightOrange flex items-center justify-center group-hover:bg-brandOrange transition">
+<svg class="w-8 h-8 text-brandOrange group-hover:text-white transition" fill="none" stroke="currentColor" stroke-width="2.2" viewbox="0 0 24 24"><path d="M3 6h18v5H3zM3 14h18v5H3z"></path></svg>
+</div>
+<h3 class="text-2xl font-black text-deepBlack mt-7">Fleet Advertising</h3>
+<p class="text-gray-600 mt-4 leading-relaxed">Coordinate multiple autos to extend visibility across selected local areas.</p>
+<ul class="mt-6 space-y-3">
+<li>✓ Fleet selection</li>
+<li>✓ Route coverage</li>
+<li>✓ Campaign scheduling</li>
+<li>✓ Execution reporting</li>
+</ul>
+</div>
+<!-- Premium Card -->
+<div class="group bg-deepBlack rounded-[2rem] p-8 border border-orange-400 shadow-orangeGlow hover:-translate-y-3 transition duration-500" data-animate="zoom-in">
+<div class="w-16 h-16 rounded-2xl bg-brandOrange flex items-center justify-center">
+<svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" stroke-width="2.2" viewbox="0 0 24 24"><path d="m12 2 3 7 7 3-7 3-3 7-3-7-7-3 7-3z"></path></svg>
+</div>
+<h3 class="text-2xl font-black text-white mt-7">Complete Auto Advertising Campaign</h3>
+<p class="text-gray-300 mt-4 leading-relaxed">Plan a tailored campaign combining suitable formats, creative production and on-ground coordination.</p>
+<a class="inline-flex mt-7 bg-buttonBlue hover:bg-blue-700 text-white px-6 py-3 rounded-full font-black transition" href="#contact">
+                    Discuss Strategy
+                </a>
+</div>
+</div>
+</div>
+</section>
+<!-- =====================================================
+       PERFORMANCE / PROGRESS SECTION
+  ====================================================== -->
+<section class="py-24 black-pattern text-white">
+<div class="w-full max-w-none mx-auto px-5 md:px-8 lg:px-12">
+<div class="grid lg:grid-cols-2 gap-14 items-center">
+<div data-animate="fade-right">
+<p class="text-brandOrange font-black uppercase tracking-widest">Campaign Planning</p>
+<h2 class="text-4xl md:text-5xl font-black mt-3">Built Around <span class="text-brandOrange">Local Visibility</span></h2>
+<p class="mt-6 text-gray-300 text-lg leading-relaxed">We plan each campaign around target areas, vehicle availability, creative requirements and execution proof. Actual reach depends on routes, fleet size and campaign duration.</p>
+<a class="inline-flex mt-8 bg-buttonBlue hover:bg-blue-700 text-white px-8 py-4 rounded-full font-black transition" href="#contact">Get Auto Media Plan</a>
+</div>
+<!-- Progress Bars -->
+<div class="bg-white/8 border border-white/10 rounded-[2rem] p-8 backdrop-blur-sm" data-animate="fade-left">
+<div class="space-y-7"><div class="flex items-center gap-4"><span class="w-10 h-10 shrink-0 rounded-xl bg-brandOrange text-white grid place-items-center font-black">01</span><div><h3 class="font-black text-white">Target Locations</h3><p class="text-gray-300 text-sm">Markets, residential areas and commercial routes</p></div></div><div class="flex items-center gap-4"><span class="w-10 h-10 shrink-0 rounded-xl bg-brandOrange text-white grid place-items-center font-black">02</span><div><h3 class="font-black text-white">Fleet &amp; Format</h3><p class="text-gray-300 text-sm">Vehicle availability and approved ad surfaces</p></div></div><div class="flex items-center gap-4"><span class="w-10 h-10 shrink-0 rounded-xl bg-brandOrange text-white grid place-items-center font-black">03</span><div><h3 class="font-black text-white">Creative Production</h3><p class="text-gray-300 text-sm">Readable artwork and installation planning</p></div></div><div class="flex items-center gap-4"><span class="w-10 h-10 shrink-0 rounded-xl bg-brandOrange text-white grid place-items-center font-black">04</span><div><h3 class="font-black text-white">Campaign Reporting</h3><p class="text-gray-300 text-sm">Execution updates and available proof</p></div></div></div>
+</div>
+</div>
+</div>
+</section>
+<!-- =====================================================
+     PROCESS SECTION
+====================================================== -->
+<section class="py-24 bg-white" id="process">
+<div class="w-full max-w-none mx-auto px-5 md:px-8 lg:px-12">
+<div class="text-center max-w-3xl mx-auto mb-16" data-animate="fade-up">
+<p class="text-brandOrange font-black uppercase tracking-widest">Our Process</p>
+<h2 class="text-4xl md:text-5xl font-black mt-3 text-deepBlack">
+        Simple, Strategic and
+        <span class="text-brandOrange">Result-Oriented</span>
+</h2>
+</div>
+<div class="grid md:grid-cols-2 lg:grid-cols-4 gap-7" id="processCards">
+<div class="process-card relative bg-lightOrange rounded-[2rem] p-8 border border-orange-100 transition-all duration-500" data-animate="fade-up">
+<span class="process-number text-6xl font-black text-brandOrange/25 absolute top-5 right-6">01</span>
+<h3 class="process-title text-2xl font-black text-deepBlack mt-10">Understand</h3>
+<p class="process-text mt-4 text-gray-700 leading-relaxed">We understand your brand, target audience, city and advertising objectives.</p>
+</div>
+<div class="process-card relative bg-lightOrange rounded-[2rem] p-8 border border-orange-100 transition-all duration-500" data-animate="fade-up">
+<span class="process-number text-6xl font-black text-brandOrange/25 absolute top-5 right-6">02</span>
+<h3 class="process-title text-2xl font-black text-deepBlack mt-10">Plan</h3>
+<p class="process-text mt-4 text-gray-700 leading-relaxed">We shortlist suitable auto formats, areas, fleet size and campaign duration.</p>
+</div>
+<div class="process-card relative bg-lightOrange rounded-[2rem] p-8 border border-orange-100 transition-all duration-500" data-animate="fade-up">
+<span class="process-number text-6xl font-black text-brandOrange/25 absolute top-5 right-6">03</span>
+<h3 class="process-title text-2xl font-black text-deepBlack mt-10">Execute</h3>
+<p class="process-text mt-4 text-gray-700 leading-relaxed">We coordinate artwork, permissions where applicable, production and installation.</p>
+</div>
+<div class="process-card relative bg-lightOrange rounded-[2rem] p-8 border border-orange-100 transition-all duration-500" data-animate="fade-up">
+<span class="process-number text-6xl font-black text-brandOrange/25 absolute top-5 right-6">04</span>
+<h3 class="process-title text-2xl font-black text-deepBlack mt-10">Optimize</h3>
+<p class="process-text mt-4 text-gray-700 leading-relaxed">We share execution updates and available campaign proof.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- =====================================================
+       CONTACT SECTION WITH FORM + MAP
+  ====================================================== -->
+<section class="py-24 bg-lightOrange" id="contact">
+<div class="w-full max-w-none mx-auto px-5 md:px-8 lg:px-12">
+<div class="grid lg:grid-cols-2 gap-10 items-stretch">
+<!-- Bottom Form -->
+<div class="bg-white rounded-[2rem] p-8 md:p-10 border border-orange-100 shadow-premium" data-animate="fade-right">
+<p class="text-brandOrange font-black uppercase tracking-widest">Contact UMNNI Advertising</p>
+<h2 class="text-4xl font-black text-deepBlack mt-3">Ready to Put Your <span class="text-brandOrange">Brand in Motion?</span></h2>
+<p class="text-gray-600 mt-4 leading-relaxed">Share your requirements and let us discuss the right auto rickshaw advertising plan for your brand.</p>
+<!-- Lead Form Bottom -->
+<form action="contact-mail.php" class="lead-form grid sm:grid-cols-2 gap-4 mt-8" method="POST"><input name="form_source" type="hidden" value="Auto Advertising Contact Form"/>
+<input class="rounded-2xl border border-orange-200 px-5 py-4 outline-none focus:border-brandOrange transition" maxlength="150" minlength="3" name="name" placeholder="Full Name" required="" type="text"/>
+<input class="rounded-2xl border border-orange-200 px-5 py-4 outline-none focus:border-brandOrange transition" inputmode="numeric" maxlength="10" name="phone" pattern="[6-9][0-9]{9}" placeholder="Phone Number" required="" type="tel"/>
+<input class="sm:col-span-2 rounded-2xl border border-orange-200 px-5 py-4 outline-none focus:border-brandOrange transition" name="email" placeholder="Email Address" required="" type="email"/>
+<select class="sm:col-span-2 rounded-2xl border border-orange-200 px-5 py-4 outline-none focus:border-brandOrange transition" name="service" required=""><option value="">Choose Advertising Format</option><option>Rear Panel Advertising</option><option>Side Panel Branding</option><option>Hood Branding</option><option>Full Auto Branding</option><option>Fleet Advertising</option><option>Complete Auto Advertising Campaign</option></select>
+<textarea class="sm:col-span-2 rounded-2xl border border-orange-200 px-5 py-4 outline-none focus:border-brandOrange transition" maxlength="5000" minlength="10" name="message" placeholder="Tell us your city, preferred areas and campaign requirements" required="" rows="5"></textarea>
+<button class="sm:col-span-2 bg-buttonBlue hover:bg-blue-700 text-white rounded-2xl px-6 py-4 font-black transition shadow-lg" type="submit">
+              Connect Us Now
+            </button>
+<p class="sm:col-span-2 text-xs text-gray-600 text-center">By submitting, you request that we contact you about your enquiry. Read our <a class="text-buttonBlue font-bold hover:underline" href="privacy-policy.html" rel="noopener noreferrer" target="_blank">Privacy Policy</a>.</p>
+</form>
+</div>
+<!-- Map + Address -->
+<div class="bg-deepBlack rounded-[2rem] overflow-hidden shadow-premium border border-orange-300" data-animate="fade-left">
+<!-- Google Map Embed -->
+<div class="h-[360px] w-full">
+<iframe allowfullscreen="" height="100%" loading="lazy" src="https://www.google.com/maps?q=Chamber%20No-6%2C%20Panchmarhi%20Tower%2C%20Kaushambi%2C%20Ghaziabad&amp;output=embed" style="border:0;" title="UMNNI Advertising Location Map" width="100%">
+</iframe>
+</div>
+<div class="p-8 md:p-10 text-white">
+<h3 class="text-3xl font-black">
+              Visit Our <span class="text-brandOrange">Office</span>
+</h3>
+<div class="mt-7 space-y-5 text-gray-300">
+<p>
+<span class="text-brandOrange font-black">Address:</span><br/>
+                Chamber No-6, Panchmarhi Tower,<br/>
+                Kaushambi, Ghaziabad
+              </p>
+<p>
+<span class="text-brandOrange font-black">Email:</span><br/>
+                info@umnni.com
+              </p>
+<p>
+<span class="text-brandOrange font-black">Phone:</span><br/>
+                (+91) 8938851151
+              </p>
+</div>
+<a class="inline-flex mt-8 bg-buttonBlue hover:bg-blue-700 text-white px-7 py-4 rounded-full font-black transition" href="mailto:info@umnni.com">
+              Email Us
+            </a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!--=====================================================
+     FOOTER
+====================================================== -->
+<footer class="relative bg-deepBlack text-white pt-20 pb-8 overflow-hidden">
+<!-- Orange Glow Background -->
+<div class="absolute top-0 right-0 w-[420px] h-[420px] bg-brandOrange/20 rounded-full blur-[140px]"></div>
+<div class="absolute bottom-0 left-0 w-[320px] h-[320px] bg-brandOrange/10 rounded-full blur-[120px]"></div>
+<div class="relative w-full max-w-none mx-auto px-5 md:px-8 lg:px-12">
+<!-- Footer Top CTA -->
+<div class="bg-white/5 border border-orange-500/20 rounded-[2rem] p-8 md:p-10 mb-14 flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6">
+<div>
+<p class="text-brandOrange font-black uppercase tracking-[0.25em] text-sm">Ready to Get Moving?</p>
+<h3 class="text-3xl md:text-4xl font-black mt-2">Let’s Take Your Brand Across the City</h3>
+</div>
+<a class="inline-flex justify-center bg-buttonBlue hover:bg-blue-700 text-white px-8 py-4 rounded-full font-black transition shadow-lg" href="#contact">
+        Get Free Consultation
+      </a>
+</div>
+<!-- Footer Grid -->
+<div class="grid md:grid-cols-2 lg:grid-cols-4 gap-10">
+<!-- Footer Brand -->
+<div>
+<!-- Footer Brand -->
+
+<a class="inline-block" href="index.html">
+<img alt="UMNNI Advertising" class="h-16 lg:h-20 w-auto object-contain" onerror="this.hidden=true; this.nextElementSibling.hidden=false;" src="assets/images/logo1.jpg"/><span class="font-black text-brandOrange" hidden="True">UMNNI Advertising</span>
+</a>
+<p class="text-gray-400 mt-5 leading-relaxed">Your partner for auto rickshaw branding, fleet advertising and local outdoor media campaigns.</p>
+<div class="mt-6 space-y-3 text-gray-400 font-semibold">
+<p>
+<span class="text-brandOrange">Email:</span>
+            info@umnni.com
+        </p>
+<p>
+<span class="text-brandOrange">Phone:</span>
+            (+91) 8938851151
+        </p>
+</div>
+
+</div>
+<!-- Footer Links -->
+<div>
+<h4 class="text-lg font-black text-brandOrange mb-5">Quick Links</h4>
+<ul class="space-y-3 text-gray-400 font-semibold">
+<li><a class="hover:text-brandOrange transition" href="https://www.umnni.com/">Home</a></li>
+<li><a class="hover:text-brandOrange transition" href="https://www.umnni.com/about.html">About Us</a></li>
+<li><a class="hover:text-brandOrange transition" href="https://www.umnni.com/careers.html">Careers</a></li>
+<li><a class="hover:text-brandOrange transition" href="https://www.umnni.com/contact.html">Contact Us</a></li>
+<li><a class="hover:text-brandOrange transition" href="privacy-policy.html">Privacy Policy</a></li>
+</ul>
+</div>
+<!-- Services -->
+<div>
+<h4 class="text-lg font-black text-brandOrange mb-5">Services</h4>
+<ul class="space-y-3 text-gray-400 font-semibold">
+<li><a class="hover:text-brandOrange transition" href="https://www.umnni.com/creative-services.html">Creative Services</a></li>
+<li><a class="hover:text-brandOrange transition" href="https://www.umnni.com/digital-marketing.html">Digital Marketing</a></li>
+<li><a class="hover:text-brandOrange transition" href="https://www.umnni.com/tv-advertising.html">TV Advertising</a></li>
+<li><a class="hover:text-brandOrange transition" href="https://www.umnni.com/radio-advertising.html">Radio Advertising</a></li>
+<li><a class="hover:text-brandOrange transition" href="https://www.umnni.com/ott-advertising.html">OTT Advertising</a></li>
+</ul>
+</div>
+<!-- Office Info -->
+<div>
+<h4 class="text-lg font-black text-brandOrange mb-5">Office Address</h4>
+<p class="text-gray-400 leading-relaxed font-semibold">
+          Chamber No-6, Panchmarhi Tower,<br/>
+          Kaushambi, Ghaziabad
+        </p>
+<div class="mt-6">
+<p class="text-sm uppercase tracking-[0.25em] text-brandOrange font-black mb-3">
+    Connect With Us
+  </p>
+<div class="flex gap-3">
+<!-- Facebook -->
+<a class="w-11 h-11 rounded-full bg-white/10 hover:bg-brandOrange flex items-center justify-center transition duration-300" href="https://www.facebook.com/people/UMNNI-Advertising/61557088396430/" target="_blank">
+<svg class="w-5 h-5 text-white" fill="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M22 12A10 10 0 1 0 10.44 21.88V14.89H7.9V12h2.54V9.8c0-2.5 1.49-3.89 3.77-3.89 1.09 0 2.23.19 2.23.19v2.45h-1.26c-1.24 0-1.63.77-1.63 1.56V12h2.77l-.44 2.89h-2.33v6.99A10 10 0 0 0 22 12z"></path>
+</svg>
+</a>
+<!-- Instagram -->
+<a class="w-11 h-11 rounded-full bg-white/10 hover:bg-brandOrange flex items-center justify-center transition duration-300" href="https://www.instagram.com/umnniadvertising/" target="_blank">
+<svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<rect height="18" rx="5" width="18" x="3" y="3"></rect>
+<circle cx="12" cy="12" r="4"></circle>
+<circle cx="17.5" cy="6.5" r="1"></circle>
+</svg>
+</a>
+<!-- LinkedIn -->
+<a class="w-11 h-11 rounded-full bg-white/10 hover:bg-brandOrange flex items-center justify-center transition duration-300" href="https://www.linkedin.com/company/umnni-advertising/posts/?feedView=all" target="_blank">
+<svg class="w-5 h-5 text-white" fill="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M4.98 3.5C4.98 4.88 3.86 6 2.48 6S0 4.88 0 3.5 1.12 1 2.48 1 4.98 2.12 4.98 3.5zM0 8h5v16H0V8zm7.5 0h4.8v2.2h.07c.67-1.27 2.3-2.6 4.73-2.6C22.15 7.6 24 10.1 24 14.1V24h-5v-8.1c0-1.93-.03-4.42-2.7-4.42-2.7 0-3.12 2.1-3.12 4.28V24h-5V8z"></path>
+</svg>
+</a>
+<!-- YouTube -->
+<a class="w-11 h-11 rounded-full bg-white/10 hover:bg-brandOrange flex items-center justify-center transition duration-300" href="https://www.youtube.com/channel/UCuX3go6rzn8PcUJ8qxR37lg" target="_blank">
+<svg class="w-6 h-6 text-white" fill="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.6 3.5 12 3.5 12 3.5s-7.6 0-9.4.6A3 3 0 0 0 .5 6.2 31.7 31.7 0 0 0 0 12a31.7 31.7 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.8.6 9.4.6 9.4.6s7.6 0 9.4-.6a3 3 0 0 0 2.1-2.1A31.7 31.7 0 0 0 24 12a31.7 31.7 0 0 0-.5-5.8zM9.75 15.5v-7l6 3.5-6 3.5z"></path>
+</svg>
+</a>
+</div>
+</div>
+</div>
+</div>
+<!-- Copyright -->
+<div class="border-t border-orange-500/30 mt-14 pt-8 flex flex-col md:flex-row justify-between gap-4 text-gray-400 text-sm">
+<p>© 2026 UMNNI Advertising. All rights reserved.</p>
+<p>
+        Built for <span class="text-brandOrange font-bold">Auto Advertising Growth</span>
+</p>
+<a class="hover:text-brandOrange transition" href="privacy-policy.html">Privacy Policy</a></div>
+</div>
+</footer>
+<!-- =====================================================
+       LINK SEPARATE JAVASCRIPT FILE
+       Keep umnni-script.js in same folder as this HTML.
+  ====================================================== -->
+<script src="assets/script.js"></script>
+</body>
+</html>

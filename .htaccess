@@ -1,0 +1,14 @@
+
+# Disable directory listing
+Options -Indexes
+
+# Default home page
+DirectoryIndex index.html
+
+# Protect sensitive files
+<FilesMatch "^(config(\.example)?\.php|\.env.*|\.gitignore|.*\.log)$">
+    Require all denied
+</FilesMatch>
+
+# Prevent Git directory access
+RedirectMatch 404 "(^|/)\.git(/|$)"

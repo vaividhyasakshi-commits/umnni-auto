@@ -1,0 +1,25 @@
+
+# Private SMTP credentials
+config.php
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# Logs
+*.log
+
+# Editor files
+.vscode/
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.bak
+
+# GitHub Pages build output
+_site/
